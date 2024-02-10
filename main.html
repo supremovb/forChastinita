@@ -1,0 +1,148 @@
+﻿<!-- Created by Anabelle Velasquez -->
+<!-- February 11, 2024 -->
+<!-- This is my valentines proposal to my girlfriend, Chastine. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine, Chastine?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>HAPPY VALENTINE'S DAY HUNNIE BABYYYY!'</h1>
+    </header>
+
+    <div class="container">
+
+
+        <section id="firstSection" class="visible">
+            <div class="section-content">
+                <p>Hey there, my lovely baby human!!</p>
+                <p>I have an incredibly important and potentially life-altering question to ask...</p>
+                <button class="btn" onclick="startBackgroundMusic()">Click me to start our song!</button>
+                <button class="btn" onclick="showNextSection()">Sure, hit me with it!</button>
+                <img src="36.jpg" alt="Your Image" class="section-image">
+            </div>
+        </section>
+
+        <section id="secondSection">
+            <p>Would you be my Valentine?</p>
+            <div class="pic-container">
+                <img src="26.jpg" alt="You">
+                <img src="22.jpg" alt="Your Girlfriend"> <!-- ALT is just a description for the image or video -->
+            </div>
+            <div>
+                <button class="btn" onclick="acceptProposal()">Yes, I'd be honored!</button>
+                <button class="btn" onclick="rejectProposal()">Umm, let me think...</button>
+            </div>
+        </section>
+
+        <section id="quoteSection">
+            <div class="quote">
+                <p>"Love is like a fart - if you have to force it, it's probably crap." - Primo</p>
+                <p>Let's make our love story sweeter than candy!</p>
+            </div>
+            <div class="countdown">
+                <p>Countdown to Valentine's Day:</p>
+                <span id="countdown"></span>
+            </div>
+        </section>
+
+        <section id="memoriesSection">
+            <div class="memories">
+                <h2>Our Sweet Memories</h2>
+                <div class="memories-gallery">
+                    <img src="1.jpg" alt="Memory 1">
+                    <img src="3.jpg" alt="Memory 2">
+                    <img src="5.jpg" alt="Memory 3">
+                    <img src="7.jpg" alt="Memory 3">
+                    <img src="9.jpg" alt="Memory 3">
+                    <img src="12.jpg" alt="Memory 3">
+                    <img src="14.jpg" alt="Memory 3">
+                    <img src="20.jpg" alt="Memory 3">
+                    <img src="23.jpg" alt="Memory 3">
+                    <img src="27.jpg" alt="Memory 3">
+                    <img src="35.jpg" alt="Memory 3">
+                    <img src="2.jpg" alt="Memory 3">
+                    <img src="4.jpg" alt="Memory 3">
+                    <img src="6.jpg" alt="Memory 3">
+                    <img src="8.jpg" alt="Memory 3">
+                    <img src="13.jpg" alt="Memory 3">
+                    <img src="21.jpg" alt="Memory 3">
+                    <img src="24.jpg" alt="Memory 3">
+                    <img src="10.jpg" alt="Memory 3">
+                    <img src="11.jpg" alt="Memory 3">
+                    <img src="17.jpg" alt="Memory 3">
+                    <img src="18.jpg" alt="Memory 3">
+                    <img src="22.jpg" alt="Memory 3">
+                    <img src="26.jpg" alt="Memory 3">
+                    <img src="32.jpg" alt="Memory 3">
+                    <img src="38.jpg" alt="Memory 3">
+                    <img src="39.jpg" alt="Memory 3">
+                    <!-- Add more memories/images here, make sure all the pictures are in the same directory as your html, css, and js -->
+                </div>
+            </div>
+            <button class="btn" onclick="showMessages()">What's next?</button>
+        </section>
+
+        <section id="loveMessageSection" style="display: none;">
+            <div class="love-message">
+                <h2>I Love You So Much</h2>
+                <p>My Dearest Chastine,</p>
+                <p>With every beat of my heart, I love you more and more.</p>
+                <p>You are the light of my life, the joy in my soul, and the one who makes every day brighter.</p>
+                <p>Thank you for being my partner, my confidant, and my best friend.</p>
+                <p>I cherish every moment we share and look forward to a lifetime of love and happiness together.</p>
+                <p>Forever and always, you have my heart.</p>
+                <p>I love you more than words can express.</p>
+                <!-- For the last message you want to say -->
+            </div>
+            <button class="btn" onclick="proceedToQuoteSection()">Proceed to the funniest quote you'll ever see</button>
+        </section>
+
+        <section id="messagesSection">
+            <div class="messages">
+                <h2>To my beloved Chastine,</h2>
+                <p>As Valentine's Day approaches, I find myself falling for you more and more...</p>
+                <p>In the gaze of yours, I see a universe of beauty, warmth, and endless love...</p>
+                <p>Your laughter is a melody that lights even the darkest of days, flooding my life with happiness...</p>
+                <p>Every beat of my heart cries your name, a tribute to the love that consumes me...</p>\
+                <p>Your presence in my life is a treasure beyond measure, and I enjoy each moment spent by your side...</p>
+                <p>In your embrace, I feel comfort, calm, and certainty that I am home...</p>
+                <p>Your generosity and compassion motivate me to be a better person, to love more sincerely, and to treasure every passing moment...</p>
+                <p>As we go through life together, hand in hand, I am reminded of the endless possibilities that love provides...</p>
+                <p>You are the brightness that lights my darkest days and the anchor that keeps me steady in the midst of life's storms...</p>
+                <p>With you, every moment is a celebration of love, laughter, and the pure happiness of being together...</p>
+                <p>Your love is the loveliest music that plays in the symphony of my heart and resounds with each breath I take...</p>
+                <p>On this day dedicated to love, I promise my lifelong devotion to you, my best friend and soulmate...</p>
+                <p>Forever and always, I will adore, honor, and keep you dear to my heart...</p>
+                <p>Happy Valentine's Day, my baby hunnieee Chastinita. May our love get stronger with each passing day.</p>
+                <p>I love you so much, my other half, and my entire existence.</p>
+                <!-- Your message at the beginning -->
+            </div>
+            <div>
+                <button class="btn" onclick="askAgain()">So, what do you say?</button>
+                <div style="margin-top: 10px;"></div> <!-- It will add space here -->
+                <div id="answerOptions" style="display: none;">
+                    <button class="btn" onclick="acceptProposalWithAnimation()">Yes, let's make beautiful memories!</button>
+                    <div style="margin-top: 10px;"></div> <!-- It will add space here -->
+                    <button class="btn" onclick="rejectProposalAndStartOver()">No, I need more convincing!</button>
+                </div>
+            </div>
+        </section>
+        <audio id="backgroundMusic" loop style="display: none;">
+            <source src="Music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <span class="animated-heart">❤️</span>
+
+    <script src="script.js"></script>
+</body>
+</html>

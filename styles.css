@@ -1,0 +1,199 @@
+﻿/* Created by Anabelle Velasquez
+ February 11, 2024
+ This is my valentines proposal to my girlfriend, Chastine. */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url('35.jpg'); /* background image */
+    background-size: cover;
+    background-position: center;
+    color: #6b0202; /* Dark red text color */
+}
+
+header {
+    background-color: #ff99cc; /* Light pink header background color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+p {
+    font-size: 18px; /* Adjust font size */
+    line-height: 1.5; /* Add line height for better readability */
+    color: #6b0202; /* Dark red text color */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4d6d; /* Pink button background color */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #ff3366; /* Darker pink shade on hover */
+    }
+
+section {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Lightened background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.section-content {
+    max-width: 80%; /* Adjust the maximum width of the content within the container */
+    margin: 0 auto; /* Center-align the content within the container */
+}
+
+.visible {
+    display: block;
+}
+
+.pic-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .pic-container img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Increased shadow */
+        animation: imageFade 1s ease-in-out infinite alternate; /* Added animation */
+    }
+
+.countdown {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.quote {
+    margin-top: 50px;
+    text-align: center;
+}
+
+    .quote p {
+        font-style: italic;
+        font-size: 20px; /* Slightly increased font size */
+        color: #880015; /* Dark red text color */
+    }
+
+.memories {
+    text-align: center;
+}
+
+    .memories h2 {
+        margin-bottom: 20px;
+    }
+
+.memories-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px; /* Increased gap for better separation */
+    justify-items: center;
+}
+
+    .memories-gallery img {
+        max-width: 100%;
+        height: auto; /* Ensure images maintain aspect ratio */
+        border-radius: 15px; /* Slightly increased border radius */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+        transition: transform 0.3s ease; /* Smooth transition on hover */
+    }
+
+        .memories-gallery img:hover {
+            transform: scale(1.1); /* Scale up the image slightly on hover */
+        }
+
+.messages {
+    text-align: center;
+    margin-top: 50px;
+}
+
+    .messages p {
+        font-style: italic;
+        font-size: 20px;
+        color: #444; /* Slightly lighter text color */
+    }
+
+.animated-heart {
+    font-size: 60px;
+    color: #ff4d6d;
+    animation: heartBeat 1s infinite;
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-heart {
+    animation: heartBeat 1s ease infinite;
+}
+
+#loveMessageSection {
+    display: none; /* Initially hide the section */
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.love-message {
+    text-align: center; /* Center-align the text */
+    font-family: 'Arial Black', Gadget, sans-serif; /* Choose appropriate font family */
+    color: #6b0202; /* Dark red text color */
+}
+
+    .love-message h2 {
+        font-size: 28px; /* Set font size for the heading */
+        margin-bottom: 15px; /* Adjust margin as needed */
+    }
+
+    .love-message p {
+        font-size: 18px; /* Set font size for paragraphs */
+        margin-bottom: 12px; /* Adjust margin as needed */
+    }
+
+.section-image {
+    display: block;
+    margin: 20px auto; /* Adjust margin as needed */
+    max-width: 100%; /* Set maximum width to 100% to fit within the container */
+    height: auto; /* Ensure the image maintains its aspect ratio */
+    border-radius: 10px; /* Add rounded corners to the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+
+
+
+@keyframes imageFade {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
